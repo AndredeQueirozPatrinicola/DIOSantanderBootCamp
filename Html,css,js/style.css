@@ -1,0 +1,42 @@
+.imgtitulo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    padding-left: 12px;
+    border: #000;
+}
+.imgcodigo{
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+#title, .subtitle, .posttitle{
+    color: #505050;
+}
+#title{
+    padding-left: 12px;
+}
+.subtitle{
+    padding-left: 13px;
+}
+.posttitle{
+    font-size: 16px;
+    font-style: italic;
+}
+body{
+    background: #f7f7f7;
+    max-width: 900px;
+    margin: auto;
+}
+.post{
+    background: #fff;
+    border: 3px solid #000;
+    padding: 15px;   
+    border-radius: 10px;
+}
+.post_content{
+    margin: 0;
+    margin-bottom: 15px;
+}
+.contato{
+    padding-left: 15px;
+}
