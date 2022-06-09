@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 10px;
+        }
+        .items{
+            margin: 5px;
+            background-color: orangered;
+            font-size: 24px;
+            text-align: center;
+        }
+        .shrink{
+            flex-shrink: 1;
+        }
+        .shrink0{
+            flex-shrink: 0;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>shrink 1</p>
+    <div class="flex-container">
+        <div class="items shrink fg-1">A</div>
+        <div class="items shrink fg-1">B</div>
+        <div class="items shrink fg-1">C</div>
+        <div class="items shrink fg-1">D</div>
+        <div class="items shrink fg-1">E</div>
+    </div>
+    <p>shrink 1</p>
+    <div class="flex-container">
+        <div class="items shrink fg-1">A</div>
+        <div class="items shrink fg-1">The generated Lorem Ipsium</div>
+        <div class="items shrink fg-1">C</div>
+        <div class="items shrink fg-1">D</div>       
+    </div>
+    <p>shrink 0</p>
+    <div class="flex-container">
+        <div class="items shrink0 fg-1">A</div>
+        <div class="items shrink0 fg-1">The generated</div>
+        <div class="items shrink0 fg-1">C</div>
+        <div class="items shrink0 fg-1">D</div>       
+    </div>
+</body>
+</html>
